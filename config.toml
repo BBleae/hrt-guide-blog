@@ -1,4 +1,84 @@
-baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
-theme = "ananke"
+baseURL = "https://blog.hrt.guide"
+languageCode = "zh-CN"
+title = "HRT Guide Blog"
+theme = "maupassant"
+googleAnalytics = ""  # UA-XXXXXXXX-X
+
+## 保持分类的原始名字（false会做转小写处理）
+preserveTaxonomyNames = true
+## 是否禁止URL Path转小写
+disablePathToLower = true
+
+hasCJKLanguage = true
+summaryLength = 140
+
+# disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要和utteranc同时开启
+
+[author]
+  name = "HRTGuide"
+
+[params]
+  author = "HRTGuide"
+  subtitle = ""
+  keywords = ""
+  description = ""
+  busuanzi = true #启用不算子网页统计
+  googleAd = ""  #ca-pub-xxxxxxxxxxxxxx
+  localSearch = true # 启用本地搜索
+
+  # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
+  customCSS = ['douban.css', 'other.css']
+  # if ['custom.css'], load '/static/css/custom.css' file
+  customJS = ['douban.js']
+  # if ['custom.js'], load '/static/js/custom.js' file
+
+  # 全局开关，你也可以在每一篇内容的 front matter 中针对单篇内容关闭或开启某些功能
+  toc = true  # 是否开启目录
+
+## 友情链接，可以多个
+
+[[params.links]]
+  title = "魔茶国际"
+  name = "魔茶国际"
+  url = "https://magictea.cc/"
+
+## 侧边栏广告位
+#[[params.ads]]
+#  title = "Ad title"
+#  url = "Ad link"
+#  img = "Ad img url"
+
+## 配置 utteranc评论,教程参考 https://utteranc.es/
+[params.utteranc]
+  enable = true
+  repo = "BBleae/hrt-guide-blog" ##换成自己得
+  issueTerm = "pathname"
+  theme = "github-light"
+  label="🍥💬🍥"
+
+## 开启版权声明，协议名字和链接都可以换
+[params.cc]
+    name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
+    link = "https://creativecommons.org/licenses/by-nc-nd/4.0/"
+
+## 配置代码高亮
+[markup]
+  [markup.highlight]
+    lineNos = true
+    style = "github"
+
+## 配置网站菜单
+
+[menu]
+
+  [[menu.main]]
+    identifier = "archives"
+    name = "归档"
+    url = "/archives/"
+    weight = 2
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about/"
+    weight = 3
