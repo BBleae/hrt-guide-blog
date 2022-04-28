@@ -1,3 +1,7 @@
+---
+title: "Part 9 常用缩写表(WIP)"
+---
+
 # Part 9 常用缩写表(WIP)
 
 |  EV  | 戊酸雌二醇（Estradiol Valerate |
